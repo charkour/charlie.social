@@ -1,11 +1,12 @@
-import { type Component, For, createSignal } from "solid-js";
-import { links, SocialLink } from "../data/links";
+import { type Component, For } from "solid-js";
+import { links } from "../data/links";
 import { projects } from "../data/projects";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Nav } from "./Nav";
 import { Project } from "./Project";
 import { Section } from "./ui/Section";
+import { StyledLink } from "./ui/StyledLink";
 import { Text } from "./ui/Text";
 
 export const App: Component = () => {
@@ -33,26 +34,5 @@ export const App: Component = () => {
       </main>
       <Footer />
     </>
-  );
-};
-
-const StyledLink: Component<SocialLink> = (props) => {
-  // TODO: is there a better way to get a ref?
-  const [hover, setHover] = createSignal(false);
-  let ref: HTMLAnchorElement;
-  return (
-    <a
-      ref={ref}
-      href={props.href}
-      class="block underline hover:italic hover:before:content-['*'] before:absolute before:left-4 pl-2"
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      style={{
-        "text-decoration-color": props.color,
-        // "border-color": hover() ? props.color : 'transparent',
-      }}
-    >
-      {props.title}
-    </a>
   );
 };
