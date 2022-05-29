@@ -15,5 +15,5 @@ html {
 }
 
 #root {
-  @apply flex flex-col items-center p-4;
+  @apply flex flex-col items-center p-4 w-full;
 }

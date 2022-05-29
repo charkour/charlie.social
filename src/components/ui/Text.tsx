@@ -1,5 +1,5 @@
 import { type Component, JSX } from "solid-js";
-import { spread, createComponent, classList } from "solid-js/web";
+import { spread, classList, setAttribute } from "solid-js/web";
 
 interface Props extends JSX.HTMLAttributes<HTMLHeadingElement> {
   as?: Parameters<typeof document.createElement>[0];
@@ -7,12 +7,16 @@ interface Props extends JSX.HTMLAttributes<HTMLHeadingElement> {
 
 export const Text: Component<Props> = ({ as = "h1", ...rest }) => {
   const element = document.createElement(as);
-  classList(element, {
-    "text-5xl text-transparent font-bold font-['Bungee_Inline',_Phosphate] bg-gradient-to-r from-purple-700 to-pink-500 bg-clip-text":
-      as === "h1",
-    "text-3xl text-gray-700": as === "h2",
-    "text-2xl text-gray-700": as === "h3",
-  });
   spread(element, rest);
+  classList(element, {
+    "uppercase font-bold font-[Phosphate] text-[9vw] border-b w-full text-center tracking-wide":
+      as === "h1",
+    "text-3xl font-[Avenir] text-gray-400 font-thin tracking-wider text-right": as === "h2",
+    "text-2xl text-gray-700": as === "h3",
+    "font-['Big_Caslon'] tracking-widest": as === 'small'
+  });
+  typeof rest.children === "string" &&
+    setAttribute(element, "id", rest.children);
+
   return element;
 };
