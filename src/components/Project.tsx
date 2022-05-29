@@ -7,7 +7,8 @@ export const Project: Component<Project> = (props) => {
     <article class="border p-4">
       <Text as="h3">{props.title}</Text>
       <Text as='p'>{props.description}</Text>
-      <ul class="flex gap-1 flex-wrap pt-3">
+      <ul class="flex gap-1 flex-wrap pt-4">
+        {/* TODO: fix the font weight shift issue.  */}
         <For each={props.tech}>
           {(item) => (
             <StyledLink title={item} color="maroon" href="" />

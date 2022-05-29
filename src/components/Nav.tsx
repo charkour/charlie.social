@@ -5,7 +5,7 @@ const links = ["Work", "Links", "Resumé"] as const;
 export const Nav: Component = () => {
   return (
     <nav class="w-full sticky top-0 bg-gray-50 pt-4 pb-2 -mt-4 border-b h-12 z-10">
-      <ul class="flex justify-between w-full font-bold font-['Big_Caslon'] tracking-widest">
+      <ul class="flex max-w-lg justify-between w-full font-bold font-['Big_Caslon'] tracking-widest mx-auto">
         <For each={links}>{(link) => <NavLink>{link}</NavLink>}</For>
       </ul>
     </nav>

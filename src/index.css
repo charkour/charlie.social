@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply p-4;
+  @apply p-4 max-w-2xl mx-auto bg-gray-50;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,5 +12,5 @@ body {
 }
 
 html {
-  @apply bg-gray-50 selection:text-white selection:bg-teal-400;
+  @apply bg-gray-100 selection:text-white selection:bg-teal-400 w-screen;
 }
