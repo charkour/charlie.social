@@ -23,12 +23,12 @@ export const links = [
     href: "",
     title: "Twitter",
     color: "lightblue",
-    desc: "Occasionally I will tweet about web dev. Twitter is how I stay up to do "
+    desc: "DMs are open! Occasionally I will tweet about web dev. Twitter is how I stay up to date on what's happening in engineering."
   },
   {
     href: "",
     title: "Stack Overflow",
     color: "orange",
-    desc: "I like to answer questions when I can and give back."
+    desc: "I like to answer questions when I can to give back to the community that helped me."
   },
 ];

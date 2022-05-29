@@ -4,10 +4,10 @@ import { Typography } from "./Typography";
 
 export const StyledLink: Component<SocialLink> = (props) => {
   return (
-    <li class='relative w-fit'>
+    <li class='relative'>
       <a
         href={props.href}
-        class="block underline hover:italic hover:before:content-['*'] before:absolute before:left-0 pl-2"
+        class="block underline hover:italic hover:before:content-['*'] before:absolute before:left-0 pl-2 w-fit"
         style={{
           "text-decoration-color": props.color,
         }}
