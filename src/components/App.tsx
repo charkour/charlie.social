@@ -2,6 +2,7 @@ import { type Component, For, type JSX, createSignal } from "solid-js";
 import photo from "../assets/charles.jpg";
 import { links, SocialLink } from "../data/links";
 import { projects } from "../data/projects";
+import { Footer } from "./Footer";
 import { Nav } from "./Nav";
 import { Project } from "./Project";
 import { Section } from "./ui/Section";
@@ -41,11 +42,7 @@ export const App: Component = () => {
         </Section>
         <Section title="Resume">Link to my resume.</Section>
       </main>
-      <footer class="h-[50vh] bg-gray-100 w-screen -mx-4 flex justify-center items-end">
-        <Text as="small">
-          Copyright Charles Kornoelje {new Date().getFullYear()}
-        </Text>
-      </footer>
+      <Footer />
     </>
   );
 };
@@ -58,7 +55,7 @@ const StyledLink: Component<SocialLink> = (props) => {
     <a
       ref={ref}
       href={props.href}
-      class="block underline hover:before:content-['*'] before:absolute before:left-4 pl-2"
+      class="block underline hover:italic hover:before:content-['*'] before:absolute before:left-4 pl-2"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       style={{
