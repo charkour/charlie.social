@@ -59,7 +59,7 @@ export const Diamond: Component = () => {
     <div class="relative h-[100px] w-[100px] overflow-hidden">
       <canvas
         ref={canvas}
-        class="absolute top-0 origin-top-left pointer"
+        class="absolute top-0 origin-top-left cursor-pointer"
         onClick={() => {
           // go to source code
         }}
