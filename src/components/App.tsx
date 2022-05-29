@@ -1,8 +1,8 @@
-import { type Component, For, type JSX, createSignal } from "solid-js";
-import photo from "../assets/charles.jpg";
+import { type Component, For, createSignal } from "solid-js";
 import { links, SocialLink } from "../data/links";
 import { projects } from "../data/projects";
 import { Footer } from "./Footer";
+import { Header } from "./Header";
 import { Nav } from "./Nav";
 import { Project } from "./Project";
 import { Section } from "./ui/Section";
@@ -12,18 +12,7 @@ export const App: Component = () => {
   return (
     <>
       <Nav />
-      <Text>Charles Kornoelje</Text>
-      <img
-        src={photo}
-        class="rounded-full ring-1 ring-offset-4 ring-gray-500 h-[20vw] w-[20vw]"
-        alt="profile shot of Charles"
-        title="profile shot of Charles"
-      />
-      <div class="flex w-full justify-between max-w-md">
-        <For each={"software engineer".split("")}>
-          {(letter) => <span>{letter}</span>}
-        </For>
-      </div>
+      <Header />
       <main class="space-y-4 pt-4">
         <Section title="Work">
           <div class="grid gap-4">
