@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,19 +6,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-  @apply bg-gray-50 selection:text-white selection:bg-teal-400;
+  @apply bg-gray-50 selection:text-white selection:bg-teal-400 scroll-mt-20;
 }
 
 #root {
-  @apply h-screen;
+  @apply flex flex-col items-center p-4;
 }
