@@ -14,9 +14,8 @@ export const NavLink: Component<Props> = (props) => {
         onClick={(e) => {
           // TODO: properly add scroll margin
           e.preventDefault();
-          const destination = document.getElementById(
-            href.substring(1)
-          );
+          const id = href.substring(1);
+          const destination = document.getElementById(id);
           if (destination) {
             destination.scrollIntoView({
               behavior: "smooth",

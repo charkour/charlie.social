@@ -1,9 +1,13 @@
 import { type Component, type JSX } from "solid-js";
-import { Text } from './Text';
+import { Text } from "./Text";
 
-export const Section: Component<{ title: string; children: JSX.Element; class?: string }> = (
-  props
-) => {
+interface Props {
+  title: string;
+  children: JSX.Element;
+  class?: string;
+}
+
+export const Section: Component<Props> = (props) => {
   return (
     <section class="w-full">
       <Text as="h2">{props.title}</Text>

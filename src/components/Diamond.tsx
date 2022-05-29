@@ -1,13 +1,13 @@
 import { onMount, type Component } from "solid-js";
 
 export const Diamond: Component = () => {
+  // TODO: how to properly use refs in solid? TS is complaining.
   let canvas: HTMLCanvasElement;
 
   // TODO: how to make canvas a higher resolution
   onMount(() => {
     canvas.width = 1000;
     canvas.height = 1000;
-    // canvas.style = "transform: scale(0.1)";
     const ctx = canvas.getContext("2d");
     if (ctx) {
       ctx.strokeStyle = "lightgray";
