@@ -1,6 +1,6 @@
 import { type Component } from "solid-js";
 import { Diamond } from "./Diamond";
-import { Text } from "./ui/Text";
+import { Typography } from "./ui/Text";
 
 export const Footer: Component = () => {
   // TODO: add dark mode toggle.
@@ -9,9 +9,9 @@ export const Footer: Component = () => {
     <footer class="h-[50vh] bg-gray-100 w-full pb-4 mt-4 flex flex-col justify-between items-center">
       <div />
       <Diamond />
-      <Text as="small">
+      <Typography as="small">
         Copyright © {new Date().getFullYear()} Charles Kornoelje
-      </Text>
+      </Typography>
     </footer>
   );
 };

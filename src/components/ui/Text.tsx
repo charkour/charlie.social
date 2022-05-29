@@ -5,17 +5,17 @@ interface Props extends JSX.HTMLAttributes<HTMLHeadingElement> {
   as?: Parameters<typeof document.createElement>[0];
 }
 
-export const Text: Component<Props> = ({ as = "h1", ...rest }) => {
+export const Typography: Component<Props> = ({ as = "h1", ...rest }) => {
   const element = document.createElement(as);
   spread(element, rest);
   classList(element, {
     // TODO: use google fonts instead of apple fonts
-    "uppercase font-bold font-[Phosphate] text-[9vw] border-b w-full text-center tracking-wide":
+    "uppercase font-bold font-[Phosphate] text-3xl sm:text-5xl md:text-6xl border-b w-full text-center tracking-wide py-0.5 sm:py-1 md:py-2":
       as === "h1",
-    "text-3xl font-[Avenir] text-gray-400 font-thin tracking-[1rem] leading-10": as === "h2",
-    "text-2xl text-gray-700 font-['Big_Caslon'] tracking-wide font-bold": as === "h3",
+    "text-xl sm:text-3xl font-[Avenir] text-gray-400 font-thin tracking-[1rem] sm:leading-10": as === "h2",
+    "text-lg sm:text-2xl text-gray-700 font-['Big_Caslon'] tracking-wide font-bold": as === "h3",
     "font-['Big_Caslon'] tracking-widest": as === 'small',
-    "leading-4 text-gray-800": as === 'p',
+    "text-sm sm:text-base leading-4 text-gray-800": as === 'p',
   });
   typeof rest.children === "string" &&
     setAttribute(element, "id", rest.children);

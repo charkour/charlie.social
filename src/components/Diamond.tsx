@@ -59,7 +59,10 @@ export const Diamond: Component = () => {
     <div class="relative h-[100px] w-[100px] overflow-hidden">
       <canvas
         ref={canvas}
-        class="absolute top-0 origin-top-left"
+        class="absolute top-0 origin-top-left pointer"
+        onClick={() => {
+          // go to source code
+        }}
         id="canvas"
         style={{ transform: "scale(0.1)" }}
       />

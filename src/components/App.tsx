@@ -24,6 +24,8 @@ export const App: Component = () => {
             <For each={links}>{(link) => <StyledLink {...link} />}</For>
           </ul>
         </Section>
+        {/* // TODO: add podcasts, books, videos and other resources. */}
+        {/* TODO: mention that I've given talks/presentations */}
         <Section title="Resumé">Link to my resume.</Section>
       </main>
       <Footer />

@@ -1,5 +1,6 @@
-import { type Component, createSignal } from "solid-js";
+import { type Component, createSignal, Show } from "solid-js";
 import { SocialLink } from "../../data/links";
+import { Typography } from "./Text";
 
 export const StyledLink: Component<SocialLink> = (props) => {
   return (
@@ -13,6 +14,10 @@ export const StyledLink: Component<SocialLink> = (props) => {
       >
         {props.title}
       </a>
+      <Show when={props.desc}>
+        {/* // TODO: Check the class is properly merging with typography */}
+        <Typography as='p' class='pl-2'>{props.desc}</Typography>
+      </Show>
     </li>
   );
 };

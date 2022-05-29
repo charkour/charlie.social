@@ -44,6 +44,16 @@ export const projects: Project[] = [
     tech: ["Bulma", "Gulp"],
   },
   {
+    title: "csps",
+    description: "tools to solve constraint satisfaction problems",
+    tech: ['TypeScript'],
+  },
+  {
+    title: "Harmoniously",
+    description: "automatically create non-conflicting semester schedules for departments and universities",
+    tech: ['TypeScript'],
+  },
+  {
     title: "Grit Leadership",
     description: "Coaching Evaluation",
     tech: ["TypeScript", "React.js", "MUI"],

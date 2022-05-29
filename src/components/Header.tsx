@@ -1,15 +1,16 @@
 import { type Component, For } from "solid-js";
-import { Text } from "./ui/Text";
+import { Typography } from "./ui/Text";
 import photo from "../assets/charles.jpg";
 import { Split } from "./ui/Split";
 
 export const Header: Component = () => {
   return (
-    <header class="flex items-center flex-col">
-      <Text>Charles Kornoelje</Text>
+    <header class="flex flex-col items-center">
+      <Typography>Charles Kornoelje</Typography>
       <img
+        // TODO: on click, display confetti
         src={photo}
-        class="rounded-full ring-1 ring-offset-4 ring-gray-500 h-[20vw] w-[20vw]"
+        class="rounded-full ring-1 ring-offset-4 ring-gray-500 h-16 sm:h-24 md:h-32 lg:h-44 xl:h-64"
         alt="profile shot of Charles"
         title="profile shot of Charles"
       />

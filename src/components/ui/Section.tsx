@@ -1,5 +1,5 @@
 import { type Component, type JSX } from "solid-js";
-import { Text } from "./Text";
+import { Typography } from "./Text";
 
 interface Props {
   title: string;
@@ -10,7 +10,7 @@ interface Props {
 export const Section: Component<Props> = (props) => {
   return (
     <section class="w-full">
-      <Text as="h2">{props.title}</Text>
+      <Typography as="h2">{props.title}</Typography>
       {props.children}
     </section>
   );
