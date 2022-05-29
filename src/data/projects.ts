@@ -8,8 +8,7 @@ export const projects: Project[] = [
   },
   {
     title: "Course Schedulizer",
-    desc:
-      "Project used internally at Calvin University by department chairs",
+    desc: "Project used internally at Calvin University by department chairs",
     tech: ["React.js", "Sass"],
   },
   {
@@ -19,8 +18,7 @@ export const projects: Project[] = [
   },
   {
     title: "React Reactions",
-    desc:
-      "Fork of an old npm package updated to work with modern React.js and Next.js",
+    desc: "Fork of an old npm package updated to work with modern React.js and Next.js",
     tech: ["React.js"],
   },
   {
@@ -46,12 +44,12 @@ export const projects: Project[] = [
   {
     title: "csps",
     desc: "tools to solve constraint satisfaction problems",
-    tech: ['TypeScript'],
+    tech: ["TypeScript"],
   },
   {
     title: "Harmoniously",
     desc: "automatically create non-conflicting semester schedules for departments and universities",
-    tech: ['TypeScript'],
+    tech: ["TypeScript"],
   },
   {
     title: "Grit Leadership",
