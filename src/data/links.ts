@@ -8,12 +8,12 @@ export const links = [
   {
     href: "https://www.github.com/charkour",
     title: "GitHub",
-    color: "Black",
+    color: "violet",
   },
   {
     href: "",
     title: "LinkedIn",
-    color: "Teal",
+    color: "teal",
   },
   {
     href: "",

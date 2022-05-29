@@ -5,11 +5,26 @@ interface Props {
 }
 
 export const NavLink: Component<Props> = (props) => {
+  const href = `#${props.children}`;
+
   return (
     <li class="relative">
       <a
-        class="hover:italic hover:before:content-['*'] before:absolute before:-left-2"
-        href={`/#${props.children}`}
+        class="hover:before:content-['*'] hover:italic before:absolute before:-left-2"
+        onClick={(e) => {
+          // TODO: properly add scroll margin
+          e.preventDefault();
+          const destination = document.getElementById(
+            href.substring(1)
+          );
+          if (destination) {
+            destination.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+          window.history.pushState(window.history.state, "", href);
+        }}
+        href={href}
       >
         {props.children}
       </a>
