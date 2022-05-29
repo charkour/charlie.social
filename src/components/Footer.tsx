@@ -10,7 +10,7 @@ export const Footer: Component = () => {
       <div />
       <Diamond />
       <Text as="small">
-        Copyright Charles Kornoelje {new Date().getFullYear()}
+        Copyright © {new Date().getFullYear()} Charles Kornoelje
       </Text>
     </footer>
   );
