@@ -24,7 +24,7 @@ export const App: Component = () => {
             <For each={links}>{(link) => <StyledLink {...link} />}</For>
           </ul>
         </Section>
-        <Section title="Resume">Link to my resume.</Section>
+        <Section title="Resumé">Link to my resume.</Section>
       </main>
       <Footer />
     </>

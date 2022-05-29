@@ -6,7 +6,7 @@ export const StyledLink: Component<SocialLink> = (props) => {
   const [hover, setHover] = createSignal(false);
   let ref: HTMLAnchorElement;
   return (
-    <li class='relative'>
+    <li class='relative w-fit'>
       <a
         ref={ref}
         href={props.href}

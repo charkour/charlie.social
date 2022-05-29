@@ -6,9 +6,9 @@ interface Props {
 
 export const NavLink: Component<Props> = (props) => {
   return (
-    <li class="hover:italic relative">
+    <li class="relative">
       <a
-        class="hover:before:content-['*'] before:absolute before:-left-2"
+        class="hover:italic hover:before:content-['*'] before:absolute before:-left-2"
         href={`/#${props.children}`}
       >
         {props.children}
