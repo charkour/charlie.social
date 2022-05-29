@@ -1,6 +1,6 @@
 import { For, type Component } from "solid-js";
 import { StyledLink } from "./ui/StyledLink";
-import { Typography } from "./ui/Text";
+import { Typography } from "./ui/Typography";
 
 export const Project: Component<Project> = (props) => {
   return (

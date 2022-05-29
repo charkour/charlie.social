@@ -1,6 +1,6 @@
 import { type Component, createSignal, Show } from "solid-js";
 import { SocialLink } from "../../data/links";
-import { Typography } from "./Text";
+import { Typography } from "./Typography";
 
 export const StyledLink: Component<SocialLink> = (props) => {
   return (

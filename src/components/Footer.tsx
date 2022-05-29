@@ -1,6 +1,6 @@
 import { type Component } from "solid-js";
 import { Diamond } from "./Diamond";
-import { Typography } from "./ui/Text";
+import { Typography } from "./ui/Typography";
 
 export const Footer: Component = () => {
   // TODO: add dark mode toggle.

@@ -1,5 +1,5 @@
 import { type Component, type JSX } from "solid-js";
-import { Typography } from "./Text";
+import { Typography } from "./Typography";
 
 interface Props {
   title: string;
