@@ -1,4 +1,5 @@
 import { For, type Component } from "solid-js";
+import { StyledLink } from "./ui/StyledLink";
 import { Text } from "./ui/Text";
 
 export const Project: Component<Project> = (props) => {
@@ -6,15 +7,13 @@ export const Project: Component<Project> = (props) => {
     <article class="border p-4">
       <Text as="h3">{props.title}</Text>
       <Text as='p'>{props.description}</Text>
-      <div class="flex gap-1 flex-wrap">
+      <ul class="flex gap-1 flex-wrap pt-3">
         <For each={props.tech}>
           {(item) => (
-            <span class="border-blue-400 border rounded-full bg-blue-300 w-fit px-1 text-sm">
-              {item}
-            </span>
+            <StyledLink title={item} color="maroon" href="" />
           )}
         </For>
-      </div>
+      </ul>
     </article>
   );
 };
