@@ -1,6 +1,7 @@
 import { type Component, For } from "solid-js";
 import { Text } from "./ui/Text";
 import photo from "../assets/charles.jpg";
+import { Split } from "./ui/Split";
 
 export const Header: Component = () => {
   return (
@@ -12,11 +13,7 @@ export const Header: Component = () => {
         alt="profile shot of Charles"
         title="profile shot of Charles"
       />
-      <div class="flex w-full justify-between max-w-md">
-        <For each={"software engineer".split("")}>
-          {(letter) => <span>{letter}</span>}
-        </For>
-      </div>
+      <Split>Software Engineer</Split>
     </header>
   );
 };

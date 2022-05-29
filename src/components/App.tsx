@@ -7,7 +7,6 @@ import { Nav } from "./Nav";
 import { Project } from "./Project";
 import { Section } from "./ui/Section";
 import { StyledLink } from "./ui/StyledLink";
-import { Text } from "./ui/Text";
 
 export const App: Component = () => {
   return (
