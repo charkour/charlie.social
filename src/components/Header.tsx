@@ -4,7 +4,7 @@ import photo from "../assets/charles.jpg";
 
 export const Header: Component = () => {
   return (
-    <header>
+    <header class="flex items-center flex-col">
       <Text>Charles Kornoelje</Text>
       <img
         src={photo}

@@ -19,14 +19,9 @@ export const App: Component = () => {
           <div class="grid gap-4">
             <For each={projects}>{(project) => <Project {...project} />}</For>
           </div>
-          <Text as="h3">Open Source Contributions</Text>
-          <ul>
-            <li>Turborepo</li>
-            <li>Utopia</li>
-          </ul>
         </Section>
         <Section title={"Links"}>
-          <ul class="">
+          <ul>
             <For each={links}>{(link) => <StyledLink {...link} />}</For>
           </ul>
         </Section>
