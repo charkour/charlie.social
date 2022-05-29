@@ -6,58 +6,67 @@ export const Footer: Component = () => {
   // TODO: add dark mode toggle.
   // TODO: how to make canvas a higher resolution
   onMount(() => {
-    canvas.width = 100;
-    canvas.height = 100;
+    canvas.width = 1000;
+    canvas.height = 1000;
+    // canvas.style = "transform: scale(0.1)";
     const ctx = canvas.getContext("2d");
     if (ctx) {
       ctx.strokeStyle = "lightgray";
+      ctx.lineWidth = 10;
 
       // TODO: use trig to calculate the correct values.
       // TODO: animate it to spin!
 
       // Outline
-      ctx.moveTo(50, 0);
-      ctx.lineTo(5, 50);
-      ctx.lineTo(50, 100);
-      ctx.lineTo(95, 50);
-      ctx.lineTo(50, 0);
+      ctx.moveTo(500, 0);
+      ctx.lineTo(50, 500);
+      ctx.lineTo(500, 1000);
+      ctx.lineTo(950, 500);
+      ctx.lineTo(500, 0);
       ctx.stroke();
 
       // Center Horizontal V
-      ctx.moveTo(5, 50);
-      ctx.lineTo(50, 65);
-      ctx.lineTo(95, 50);
+      ctx.moveTo(50, 500);
+      ctx.lineTo(500, 650);
+      ctx.lineTo(950, 500);
       ctx.stroke();
 
       // Leftmost
-      ctx.moveTo(50, 0);
-      ctx.lineTo(20, 55);
-      ctx.lineTo(50, 100);
+      ctx.moveTo(500, 0);
+      ctx.lineTo(200, 550);
+      ctx.lineTo(500, 1000);
       ctx.stroke();
 
       // Rightmost
-      ctx.moveTo(50, 0);
-      ctx.lineTo(80, 55);
-      ctx.lineTo(50, 100);
+      ctx.moveTo(500, 0);
+      ctx.lineTo(800, 550);
+      ctx.lineTo(500, 1000);
       ctx.stroke();
 
       // Left center
-      ctx.moveTo(50, 0);
-      ctx.lineTo(40, 62);
-      ctx.lineTo(50, 100);
+      ctx.moveTo(500, 0);
+      ctx.lineTo(400, 620);
+      ctx.lineTo(500, 1000);
       ctx.stroke();
 
       // Right center
-      ctx.moveTo(50, 0);
-      ctx.lineTo(60, 62);
-      ctx.lineTo(50, 100);
+      ctx.moveTo(500, 0);
+      ctx.lineTo(600, 620);
+      ctx.lineTo(500, 1000);
       ctx.stroke();
     }
   });
   return (
-    <footer class="h-[50vh] bg-gray-100 w-full pb-4 mt-4 flex flex-col justify-between items-center">
+    <footer class="relative h-[50vh] bg-gray-100 w-full pb-4 mt-4 flex flex-col justify-between items-center">
       <div />
-      <canvas ref={canvas} class="" id="canvas" />
+      <div class="relative h-[100px] w-[100px] overflow-hidden">
+        <canvas
+          ref={canvas}
+          class="absolute top-0 origin-top-left"
+          id="canvas"
+          style={{ transform: "scale(0.1)" }}
+        />
+      </div>
       <Text as="small">
         Copyright Charles Kornoelje {new Date().getFullYear()}
       </Text>
