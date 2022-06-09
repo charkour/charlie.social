@@ -26,20 +26,26 @@ export const projects: ProjectProps[] = [
     href: "https://github.com/charkour/react-reactions",
   },
   {
-    title: "Benchmark",
-    desc: "Internal app used at CQL",
-    tech: [".NET Core", "C#", "React.js", "SQL Server"],
-  },
-  {
     title: "Turtle Tracker",
     desc: "Mobile app used by the Calvin Ecosystem Preserve to track the health of their threatened box turtles",
     tech: ["React Native", "Expo", "Firebase", "PostgreSQL", "Ionic"],
     href: "https://github.com/calvin-cs262-fall2019-teamH?type=source",
   },
   {
+    title: "Power-Up Pong",
+    desc: "A hardware project that used Raspberry Pi to control a game of Pong and connect to a remote server. A web application was used to display the state of the game and could be viewed anywhere in the world. ",
+    tech: ["Preact", "TypeScript", "MQTT", "Raspberry Pi"],
+    href: "https://github.com/power-up-pong?type=source",
+  },
+  {
     title: "IT Inventory Tracker",
     desc: "Internal app used at CQL to keep track of their inventory.",
     tech: [".NET Core", "C#", "React.js"],
+  },
+  {
+    title: "Benchmark",
+    desc: "Internal app used at CQL",
+    tech: [".NET Core", "C#", "React.js", "SQL Server"],
   },
   {
     title: "Vacation Tracker",

@@ -46,4 +46,7 @@ type Tech =
   | "Bulma"
   | "Gulp"
   | "MUI"
-  | "Ionic";
+  | "Ionic"
+  | "MQTT"
+  | "Preact"
+  | "Raspberry Pi";
