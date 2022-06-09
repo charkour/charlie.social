@@ -9,7 +9,6 @@ export const Typography: Component<Props> = ({ as = "h1", ...rest }) => {
   const element = document.createElement(as);
   spread(element, rest);
   classList(element, {
-    // TODO: use google fonts instead of apple fonts
     "uppercase font-bold font-['Exo_2',_Phosphate] text-3xl sm:text-5xl md:text-6xl border-b w-full text-center tracking-wide py-0.5 sm:py-1 md:py-2":
       as === "h1",
     "text-xl sm:text-3xl font-['Quicksand',_Avenir] text-gray-400 font-thin tracking-[1rem] sm:leading-10":

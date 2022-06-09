@@ -1,17 +1,31 @@
-import { For, type Component } from "solid-js";
-import { StyledLinkItem } from "./ui/StyledLink";
+import { For, type Component, Show } from "solid-js";
 import { Typography } from "./ui/Typography";
 
-export const Project: Component<Project> = (props) => {
+export interface ProjectProps {
+  title: string;
+  desc: string;
+  tech: Tech[];
+  href?: string;
+}
+
+export const Project: Component<ProjectProps> = (props) => {
   return (
     <article class="border p-4">
-      <Typography as="h3">{props.title}</Typography>
+      <Typography as="h3" class="inline">
+        {props.title}
+      </Typography>
+      <Show when={props.href}>
+        <a
+          href={props.href}
+          class="pl-2 hover:italic underline decoration-emerald-300"
+        >
+          View
+        </a>
+      </Show>
       <Typography as="p">{props.desc}</Typography>
       <ul class="flex flex-wrap gap-2 pt-2">
         {/* TODO: fix the font weight shift issue. */}
-        <For each={props.tech}>
-          {(item) => <StyledLinkItem title={item} color="mediumseagreen" href="" />}
-        </For>
+        <For each={props.tech}>{(item) => <span>{item}</span>}</For>
       </ul>
     </article>
   );
@@ -33,9 +47,3 @@ type Tech =
   | "Gulp"
   | "MUI"
   | "Ionic";
-
-export interface Project {
-  title: string;
-  desc: string;
-  tech: Tech[];
-}
