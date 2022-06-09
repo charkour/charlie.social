@@ -12,7 +12,6 @@ export const NavLink: Component<Props> = (props) => {
       <a
         class="hover:before:content-['*'] hover:italic before:absolute before:-left-2"
         onClick={(e) => {
-          // TODO: properly add scroll margin
           e.preventDefault();
           const id = href.substring(1);
           const destination = document.getElementById(id);
