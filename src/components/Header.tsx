@@ -8,14 +8,17 @@ export const Header: Component = () => {
   return (
     <header class="flex flex-col items-center">
       <Typography>Charles Kornoelje</Typography>
-      <img
-        // TODO: on click, display confetti
-        src={photo}
-        class="rounded-full ring-1 ring-offset-4 ring-gray-500 h-16 sm:h-24 md:h-32 lg:h-44 xl:h-64 cursor-pointer"
-        alt="profile shot of Charles"
-        title="profile shot of Charles"
+      <div
+        class="overflow-hidden rounded-full ring-1 ring-offset-4 ring-gray-500 cursor-pointer"
         onClick={() => confetti()}
-      />
+      >
+        <img
+          src={photo}
+          class="h-16 sm:h-24 md:h-32 lg:h-44 xl:h-64 scale-125 origin-top"
+          alt="profile shot of Charles"
+          title="profile shot of Charles"
+        />
+      </div>
       <Split class="pt-1">Software Engineer</Split>
       <p class="pt-2 mx-10 text-center">
         I help companies modernize their tech stacks and create performant
