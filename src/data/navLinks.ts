@@ -1,1 +1,1 @@
-export const navLinks = ["Work", "Links", "Resumé"] as const;
+export const navLinks = ["Projects", "Links", "Resumé"] as const;

@@ -14,7 +14,8 @@ export const Header: Component = () => {
         alt="profile shot of Charles"
         title="profile shot of Charles"
       />
-      <Split>Software Engineer</Split>
+      <Split class="pt-1">Software Engineer</Split>
+      <p class='pt-2 mx-10 text-center'>I help companies modernize their tech stacks and create performant experiences users love.</p>
     </header>
   );
 };

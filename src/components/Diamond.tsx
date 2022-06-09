@@ -56,7 +56,10 @@ export const Diamond: Component = () => {
     }
   });
   return (
-    <div class="relative h-[100px] w-[100px] overflow-hidden">
+    <a
+      href="https://github.com/charkour/charlie.social"
+      class="relative h-[100px] w-[100px] overflow-hidden appearance-none"
+    >
       <canvas
         ref={canvas}
         class="absolute top-0 origin-top-left cursor-pointer"
@@ -66,6 +69,6 @@ export const Diamond: Component = () => {
         id="canvas"
         style={{ transform: "scale(0.1)" }}
       />
-    </div>
+    </a>
   );
 };
