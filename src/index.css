@@ -12,5 +12,5 @@ body {
 }
 
 html {
-  @apply bg-gray-100 selection:text-white selection:bg-emerald-400 w-screen;
+  @apply bg-gray-100 selection:text-white selection:bg-emerald-400 w-screen scroll-p-14;
 }
