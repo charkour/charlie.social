@@ -9,12 +9,12 @@ export const Header: Component = () => {
     <header class="flex flex-col items-center">
       <Typography>Charles Kornoelje</Typography>
       <div
-        class="overflow-hidden rounded-full ring-1 ring-offset-4 ring-gray-500 cursor-pointer"
+        class="overflow-hidden rounded-full ring-1 ring-offset-4 ring-gray-500 cursor-pointer h-20 sm:h-24 md:h-32 lg:h-44 xl:h-64"
         onClick={() => confetti()}
       >
         <img
           src={photo}
-          class="h-16 sm:h-24 md:h-32 lg:h-44 xl:h-64 scale-125 origin-top"
+          class="h-20 sm:h-24 md:h-32 lg:h-44 xl:h-64 scale-125 origin-top"
           alt="profile shot of Charles"
           title="profile shot of Charles"
         />
