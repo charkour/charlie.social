@@ -20,14 +20,22 @@ export const App: Component = () => {
           </div>
         </Section>
         <Section title={"Links"}>
-          <ul class='space-y-3'>
+          <ul class="space-y-3">
             <For each={links}>{(link) => <StyledLinkItem {...link} />}</For>
           </ul>
         </Section>
         {/* // TODO: add podcasts, books, videos and other resources. */}
         {/* TODO: mention that I've given talks/presentations */}
-        <Section title="Resumé"><ul>
-          <StyledLinkItem title="My resumé" href="https://drive.google.com/file/d/1b8D9UjCz1jWnHBrvuAbghgj0yumGx9PP/view?usp=sharing" color="blue" desc="Hosted on Google Drive."/></ul></Section>
+        <Section title="Resumé">
+          <ul>
+            <StyledLinkItem
+              title="My resumé"
+              href="https://drive.google.com/file/d/1b8D9UjCz1jWnHBrvuAbghgj0yumGx9PP/view?usp=sharing"
+              color="blue"
+              desc="Hosted on Google Drive."
+            />
+          </ul>
+        </Section>
       </main>
       <Footer />
     </>
