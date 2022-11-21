@@ -10,23 +10,25 @@ export interface ProjectProps {
 
 export const Project: Component<ProjectProps> = (props) => {
   return (
-    <article class="border p-4">
-      <Typography as="h3" class="inline">
-        {props.title}
-      </Typography>
-      <Show when={props.href}>
-        <a
-          href={props.href}
-          class="pl-2 hover:italic underline decoration-emerald-300"
-        >
-          View
-        </a>
-      </Show>
-      <Typography as="p">{props.desc}</Typography>
-      <ul class="flex flex-wrap gap-2 pt-2">
-        {/* TODO: fix the font weight shift issue. */}
-        <For each={props.tech}>{(item) => <span>{item}</span>}</For>
-      </ul>
+    <article class="card">
+      <div class="card-content">
+        <Typography as="h3" class="inline">
+          {props.title}
+        </Typography>
+        <Show when={props.href}>
+          <a
+            href={props.href}
+            class="pl-2 hover:italic underline decoration-emerald-300"
+          >
+            View
+          </a>
+        </Show>
+        <Typography as="p">{props.desc}</Typography>
+        <ul class="flex flex-wrap gap-2 pt-2">
+          {/* TODO: fix the font weight shift issue. */}
+          <For each={props.tech}>{(item) => <span>{item}</span>}</For>
+        </ul>
+      </div>
     </article>
   );
 };

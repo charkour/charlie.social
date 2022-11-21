@@ -1,4 +1,4 @@
-import { type Component, createSignal, Show, JSXElement } from "solid-js";
+import { type Component, Show, type JSXElement } from "solid-js";
 import { SocialLink } from "../../data/links";
 import { Typography } from "./Typography";
 
