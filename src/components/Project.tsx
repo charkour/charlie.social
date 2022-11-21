@@ -15,14 +15,14 @@ export const Project: Component<ProjectProps> = (props) => {
         <Typography as="h3" class="inline">
           {props.title}
         </Typography>
-        <Show when={props.href}>
+        {/* <Show when={props.href}>
           <a
             href={props.href}
             class="pl-2 hover:italic underline decoration-emerald-300"
           >
             View
           </a>
-        </Show>
+        </Show> */}
         <Typography as="p">{props.desc}</Typography>
         <ul class="flex flex-wrap gap-2 pt-2">
           {/* TODO: fix the font weight shift issue. */}
