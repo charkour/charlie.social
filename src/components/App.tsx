@@ -16,21 +16,7 @@ export const App = () => {
         <Header />
         <main class="space-y-4 pt-4">
           <Section title="Projects">
-            <div
-              class="grid gap-2 md:grid-cols-2"
-              id="cards"
-              onMouseMove={(e) => {
-                for (const card of document.getElementsByClassName("card")) {
-                  const rect = card.getBoundingClientRect(),
-                    x = e.clientX - rect.left,
-                    y = e.clientY - rect.top;
-
-                    // TODO: figure out why TS is complaining about this.
-                  card.style.setProperty("--x", `${x}px`);
-                  card.style.setProperty("--y", `${y}px`);
-                }
-              }}
-            >
+            <div class="grid gap-2 md:grid-cols-2" id="cards">
               <For each={projects}>{(project) => <Project {...project} />}</For>
             </div>
           </Section>

@@ -21,7 +21,7 @@ html {
   --card-color: rgb(44 54 57);
 }
 
-/* Theme from https://www.reddit.com/r/webdev/comments/up4wan/i_recreated_this_amazing_multicard_hover_effect/ */
+/* The card styles were inspired by Linear.app and I built on top of the tutorial here: https://www.reddit.com/r/webdev/comments/up4wan/i_recreated_this_amazing_multicard_hover_effect/ */
 
 /* Neighbor borders */
 #cards:hover > .card::after {
@@ -84,7 +84,7 @@ html {
   @apply absolute inset-0 rounded-[inherit] w-full h-full opacity-[0.03];
   content: "";
   width: 100%;
-  /* https://grainy-gradients.vercel.app/ */
+  /* This useful site was used to generate the grain: https://grainy-gradients.vercel.app/ */
   filter: contrast(170%) brightness(900%);
   background: linear-gradient(
       121deg,
@@ -97,4 +97,26 @@ html {
       rgba(0, 0, 255, 0.45)
     ),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* https://fossheim.io/writing/posts/css-text-gradient/ */
+h1 {
+  background-color: white;
+
+  background: radial-gradient(
+    600px circle at var(--x) var(--y),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.7) 40%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
