@@ -15,12 +15,4 @@ document.getElementById("root")!.onmousemove = (e) => {
     card.style.setProperty("--x", `${x}px`);
     card.style.setProperty("--y", `${y}px`);
   }
-  // TODO: reuse the code rather than copy
-  const h1 = document.getElementsByTagName("h1")[0];
-  const rect = h1.getBoundingClientRect(),
-    x = e.clientX - rect.left,
-    y = e.clientY - rect.top;
-
-  h1.style.setProperty("--x", `${x}px`);
-  h1.style.setProperty("--y", `${y}px`);
 };

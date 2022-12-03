@@ -25,7 +25,6 @@ export const Project: Component<ProjectProps> = (props) => {
         </Show> */}
         <Typography as="p">{props.desc}</Typography>
         <ul class="flex flex-wrap gap-2 pt-2">
-          {/* TODO: fix the font weight shift issue. */}
           <For each={props.tech}>{(item) => <span>{item}</span>}</For>
         </ul>
       </div>

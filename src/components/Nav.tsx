@@ -4,8 +4,8 @@ import { NavLink } from "./ui/NavLink";
 
 export const Nav = () => {
   return (
-    <nav class="w-full h-12 sticky top-0 z-10 bg-light border-b py-3">
-      <ul class="w-full max-w-lg flex justify-between font-bold font-['Libre_Caslon_Text',_'Big_Caslon'] tracking-widest mx-auto">
+    <nav class="w-full h-12 sticky top-0 z-10 bg-transparent border-b py-3 backdrop-blur backdrop-saturate-50">
+      <ul class="w-full max-w-lg flex justify-between font-bold tracking-widest mx-auto">
         <For each={navLinks}>{(link) => <NavLink>{link}</NavLink>}</For>
       </ul>
     </nav>

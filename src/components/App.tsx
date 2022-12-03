@@ -12,6 +12,7 @@ export const App = () => {
   return (
     <>
       <Nav />
+      <div id='grain'></div>
       <div class="p-4 max-w-4xl mx-auto">
         <Header />
         <main class="space-y-4 pt-4">
