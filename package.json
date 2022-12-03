@@ -26,8 +26,5 @@
     "solid-js": "1.6.2",
     "solid-start": "0.2.6",
     "undici": "5.13.0"
-  },
-  "engines": {
-    "node": ">=16"
   }
 }
