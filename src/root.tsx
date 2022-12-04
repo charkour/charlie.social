@@ -1,7 +1,6 @@
 /* @refresh reload */
-import { Suspense } from "solid-js";
+import { Suspense, onMount } from "solid-js";
 import {
-  A,
   Body,
   ErrorBoundary,
   FileRoutes,
@@ -14,9 +13,20 @@ import {
   Link
 } from "solid-start";
 import "./root.css";
-import { App } from "./components";
 
 export default function Root() {
+  onMount(() => {
+    document.body.onmousemove = (e) => {
+      for (const card of document.getElementsByClassName("card") as HTMLCollectionOf<HTMLElement>) {
+        const rect = card.getBoundingClientRect(),
+          x = e.clientX - rect.left,
+          y = e.clientY - rect.top;
+
+        card.style.setProperty("--x", `${x}px`);
+        card.style.setProperty("--y", `${y}px`);
+      }
+    };
+  })
   return (
     <Html lang="en">
       <Head>
@@ -39,16 +49,3 @@ export default function Root() {
     </Html>
   );
 }
-
-
-// document.getElementById("root")!.onmousemove = (e) => {
-//   for (const card of document.getElementsByClassName("card")) {
-//     const rect = card.getBoundingClientRect(),
-//       x = e.clientX - rect.left,
-//       y = e.clientY - rect.top;
-
-//     // TODO: figure out why TS is complaining about this.
-//     card.style.setProperty("--x", `${x}px`);
-//     card.style.setProperty("--y", `${y}px`);
-//   }
-// };

@@ -51,7 +51,7 @@ body {
 
 .card::before,
 .card::after {
-  border-radius: inherit;
+  border-radius: 4px;
   content: "";
   inset: 0px;
   opacity: 0;
