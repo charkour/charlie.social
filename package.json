@@ -25,6 +25,7 @@
     "canvas-confetti": "1.6.0",
     "solid-js": "1.6.2",
     "solid-start": "0.2.7",
+    "solid-start-vercel": "0.2.7",
     "undici": "5.13.0"
   }
 }
