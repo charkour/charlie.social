@@ -1,13 +1,13 @@
 import solid from "solid-start/vite";
 import { defineConfig } from "vite";
 // @ts-ignore -- no types
-import vercel from "solid-start-vercel";
+import netlify from 'solid-start-netlify'
 
 export default defineConfig({
   plugins: [
     solid({
       ssr: true,
-      adapter: vercel({
+      adapter: netlify({
         prerender: true,
       }),
     }),
