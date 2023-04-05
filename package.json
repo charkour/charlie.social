@@ -10,23 +10,18 @@
   },
   "devDependencies": {
     "@types/canvas-confetti": "1.6.0",
-    "autoprefixer": "10.4.13",
+    "autoprefixer": "10.4.14",
     "postcss": "8.4.21",
-    "prettier": "2.8.4",
-    "prettier-plugin-tailwindcss": "0.2.3",
-    "solid-start-node": "0.2.22",
-    "tailwindcss": "3.2.7",
-    "typescript": "4.9.5",
-    "vite": "3.2.5"
+    "prettier": "2.8.7",
+    "prettier-plugin-tailwindcss": "0.2.6",
+    "tailwindcss": "3.3.1",
+    "typescript": "5.0.3",
+    "vite": "4.2.1"
   },
   "dependencies": {
-    "@solidjs/meta": "0.28.2",
-    "@solidjs/router": "0.7.0",
     "canvas-confetti": "1.6.0",
-    "solid-js": "1.6.11",
-    "solid-start": "0.2.22",
-    "solid-start-netlify": "0.2.22",
-    "solid-start-vercel": "0.2.22",
-    "undici": "5.20.0"
+    "solid-js": "1.7.2",
+    "solid-start": "0.2.25",
+    "solid-start-netlify": "0.2.25"
   }
 }

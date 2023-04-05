@@ -8,7 +8,7 @@ export default defineConfig({
     solid({
       ssr: true,
       adapter: netlify({
-        prerender: true,
+        edge: true,
       }),
     }),
   ],
