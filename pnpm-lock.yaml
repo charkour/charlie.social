@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@solidjs/meta':
+    specifier: 0.28.4
+    version: 0.28.4(solid-js@1.7.2)
   '@solidjs/router':
     specifier: 0.8.2
     version: 0.8.2(solid-js@1.7.2)

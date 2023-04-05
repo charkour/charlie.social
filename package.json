@@ -19,6 +19,7 @@
     "vite": "4.2.1"
   },
   "dependencies": {
+    "@solidjs/meta": "0.28.4",
     "@solidjs/router": "0.8.2",
     "canvas-confetti": "1.6.0",
     "meta": "link:@@solidjs/meta",
