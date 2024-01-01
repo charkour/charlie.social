@@ -30,7 +30,7 @@ export default function Root() {
     };
   });
   return (
-    <Html lang="en">
+    <Html lang="en" class="bg-zinc-900 selection:text-white selection:bg-emerald-400 w-screen scroll-p-14 text-white bg-no-repeat">
       <Head>
         <Title>Charles Kornoelje</Title>
         <Meta charset="utf-8" />
