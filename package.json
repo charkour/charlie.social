@@ -4,27 +4,23 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "solid-start dev",
-    "build": "solid-start build",
-    "start": "solid-start start"
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start"
   },
   "devDependencies": {
-    "@types/canvas-confetti": "1.6.0",
-    "autoprefixer": "10.4.14",
-    "postcss": "8.4.21",
+    "@types/canvas-confetti": "1.6.4",
+    "autoprefixer": "10.4.16",
+    "postcss": "8.4.32",
     "prettier": "2.8.7",
-    "prettier-plugin-tailwindcss": "0.2.7",
-    "tailwindcss": "3.3.1",
-    "typescript": "5.0.4",
-    "vite": "4.2.1"
+    "prettier-plugin-tailwindcss": "0.5.10",
+    "tailwindcss": "3.4.0"
   },
   "dependencies": {
-    "@solidjs/meta": "0.28.4",
-    "@solidjs/router": "0.8.2",
-    "canvas-confetti": "1.6.0",
-    "meta": "link:@@solidjs/meta",
-    "solid-js": "1.7.3",
-    "solid-start": "0.2.26",
-    "solid-start-netlify": "0.2.26"
-   }
+    "@solidjs/router": "0.10.5",
+    "@solidjs/start": "0.4.2",
+    "canvas-confetti": "1.9.2",
+    "solid-js": "1.8.7",
+    "vinxi": "0.0.62"
+  }
 }

@@ -1,6 +1,6 @@
 import { type Component, For } from "solid-js";
 import { Typography } from "./ui/Typography";
-import photo from "../assets/charles.jpg";
+import photo from "../../public/charles.jpg";
 import { Split } from "./ui/Split";
 import confetti from "canvas-confetti";
 

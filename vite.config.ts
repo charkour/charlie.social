@@ -1,15 +1,9 @@
-import solid from "solid-start/vite";
-import { defineConfig } from "vite";
-// @ts-ignore -- no types
-import netlify from 'solid-start-netlify'
+import { defineConfig } from "@solidjs/start/config";
 
 export default defineConfig({
-  plugins: [
-    solid({
-      ssr: true,
-      adapter: netlify({
-        edge: true,
-      }),
-    }),
-  ],
+  start: {
+    server: {
+      preset: "netlify-static"
+    }
+  }
 });
